@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 function Categories() {
     const [state,setstate]=useState([])
@@ -23,7 +24,7 @@ function Categories() {
   return (
     <div>
         <h1>Categories</h1>
-       
+       <Link to='/categ'><Button>Search Here</Button></Link>
         <div>
            {
             state.map((i)=>{
